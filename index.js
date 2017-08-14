@@ -21,7 +21,8 @@ app.get('/login.html', function (req, res) {
 /* route to handle login and registration */
 app.post('/api/register',registerController.register);
 app.post('/api/authenticate',authenticateController.authenticate);
-app.post('/controllers/register-controller', registerController.register);
 
+console.log(authenticateController);
+app.post('/controllers/register-controller', registerController.register);
 app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 app.listen(8012);
